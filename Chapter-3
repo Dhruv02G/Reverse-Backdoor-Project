@@ -1,0 +1,50 @@
+Chapter 3 Requirement Analysis and Solution Approach
+
+3.1 Overall Description of The Project
+Remotely hacking into the Windows system with reverse TCP payload using an open-source tool. Reverse TCP opens a backdoor on the victim system which is remotely operated by the attacker without the victim’s notice. The firewall only scans the incoming traffic and doesn’t examine the outgoing traffic which is the flaw that leads to the back door.
+•	Access file system.
+•	Execute system commands.
+•	Download & upload files
+•	Running Executables Silently
+•	Persistence
+•	Running Programs on Start-up
+•	Creating a Trojan by Embedding Files in Program Code
+•	Bypassing Anti-Virus Programs
+•	Adding an Icon to Generated Executables
+•	Spoofing File Extension
+
+3.2 Requirement Analysis
+Virtual Machine
+VMs are used in cyber security extensively for several reasons including access to tools across multiple platforms, and — if properly configured and isolated from the network — can also be used for malware analysis. Using a VM is also a great way to safely test new things without causing problems on the ‘host’.
+
+Why To Use Kali Linux
+There is a wide array of reasons as to why one should use Kali Linux. Let me list down a few of them:
+1.	As Free as It Can Get – Kali Linux has been and will always be free to use.
+2.	More Tools Than You Could Think Of – Kali Linux comes with over 600 different penetration testing and security analytics related tool.
+3.	Open-Source – Kali, being a member of the Linux family, follows the widely appreciated open-source model. Their development tree is publicly viewable on Git and all of the code is available for your tweaking purposes.
+4.	Multi-Language Support – Although penetration tools tend to be written in English, it has been ensured that Kali includes true multilingual support, allowing more users to operate in their native language and locate the tools they need for the job.
+5.	Completely Customizable – The developers at offensive security understand that not everyone will agree with their design model, so they have made it as easy as possible for the more adventurous user to customise Kali Linux to their liking, all the way down to the kernel.
+
+Socket Programming
+A socket is a communications connection point (endpoint) that you can name and address in a network. Socket programming shows how to use socket APIs to establish communication links between remote and local processes.
+The processes that use a socket can reside on the same system or different systems on different networks. Sockets are useful for both stand-alone and network applications. Sockets allow you to exchange information between processes on the same machine or across a network, distribute work to the most efficient machine, and they easily allow access to centralised data. Socket application program interfaces (APIs) are the network standard for TCP/IP. A wide range of operating systems support socket APIs. Sockets support multiple transport and networking protocols. Socket system functions and the socket network functions are thread safe.
+Why Windows as Target Machine
+Windows has always been a bigger target for hackers than Linux for a variety of reasons. First and foremost, Windows is by far the most popular operating system in the world, with a market share of over 90%. That means there are a lot more Windows users out there for hackers to target. Another reason Windows is a bigger target is that it is generally less secure than Linux. While there are plenty of security measures you can take to secure your Windows system, the fact is that Windows is just inherently less secure than Linux.
+This is due to a number of factors, including the fact that Windows is a proprietary operating system with closed-source code, while Linux is open source.
+
+
+3.3 Solution Approach
+Backdoors are difficult to detect. Everyday users can’t discover a backdoor just by opening the Task Manager. But there are a few easy steps you can take to keep your device safe from backdoors virus attacks, such as:
+Use an Antivirus
+Always use advanced antivirus software that can detect and prevent a wide range of malware, including trojans, crypto hackers, spyware, and rootkits. An antivirus will detect backdoor viruses and eliminate them before they can infect your computer. Good antivirus software like Norton 360 also includes tools like Wi-Fi monitoring, an advanced firewall, web protection, and microphone and webcam privacy monitoring to ensure you’re as safe as possible online.
+Download With Care
+Backdoors are often bundled with seemingly legitimate free software, files, and applications. When downloading any file from the internet, check to see if you’re only getting the file you wanted, or if there are some nasty hitchhikers coming along for the ride. Even a file that behaves like the file you’re looking for could be a trojan. Make sure to always download from official websites, avoid pirate sites, and install an antivirus with real-time protection that can flag malware files before you even download them onto your system.
+Use a Firewall
+Firewalls are essential for anti-backdoor protection — they monitor all incoming and outgoing traffic on your device. If someone outside of your approved network is trying to get into your device, the firewall will block them out, and if an app on your device is trying to send data out to an unknown network location, the firewall will block that app, too.
+Advanced firewalls can detect unauthorised backdoor traffic even when your device’s malware detection has been fooled. Windows and macOS both have pretty decent built-in firewalls, but they’re not good enough. There are a few antivirus programs with good firewalls (McAfee has excellent network protections) and you can also consider purchasing a smart firewall, which is a physical device that you connect to your router to keep your network as safe as possible.
+
+Use a Password Manager
+Password managers generate and store login information for all your accounts and even help you log into them automatically. All of this information is securely encrypted using 256-bit AES encryption and locked behind a master password. Advanced password managers like Dash lane can even enhance your password vault’s security using biometric login or 2FA tools like TOTP generators and USB tokens. Because they generate random, complex passwords, password managers make it a lot harder for hackers to get into your network or spread across your network in the event that you get a backdoor installed on your system.
+Stay on Top of Security Updates/Patches
+Zero-day attacks are pretty rare, and most hackers just recycle the same exploits and malware because it’s cheap and easy for them to do so. Plus, it works. One in three IT professionals (34%) in Europe admitted that their company had been breached as a result of an unpatched vulnerability.
+Software developers frequently publish new patches to fix the vulnerabilities in their software, and it’s not hard to install those updates. Many programs even include an auto-update option. If you’re a macOS or Windows user, navigate to your settings and turn “Automatic Updates” on — it’s especially important to keep your OS updated because backdoors depend on fooling your operating system.
